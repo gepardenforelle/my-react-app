@@ -8,7 +8,13 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
+      <div className='product-container'>
       <Product/>
+      <Product/>
+      <Product/>
+      <Product/>  
+      </div>
+      
     </div>
     
     )
