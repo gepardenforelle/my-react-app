@@ -9,9 +9,9 @@ function App() {
     <div>
       <Navbar></Navbar>
       <div className='product-container'>
-      <Product/>
-      <Product/>
-      <Product/>
+      <Product title ="Tomaten" image="oranges.jpg"/>
+      <Product title ="Trauben" image="blueberries.jpg"/>
+      <Product title ="Erdbeeren" image="raspberries.jpg"/>
       <Product/>  
       </div>
       
