@@ -1,13 +1,6 @@
 import './BooksList.css';
 import React from 'react';
-const MyButton = () =>  {
-  const handleClick =() => {
-    console.log('Button clicked');
-  };
-  return (
-    <button type="button" onClick={handleClick}>Click me!</button>
-  )
-}
+  
 function BooksList() {
     return (
       <table>

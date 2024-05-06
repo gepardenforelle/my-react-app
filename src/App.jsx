@@ -1,18 +1,13 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 import BooksList from './BooksList';
-
+import Clock from './Clock';
 
 function App() {
   const [count, setCount] = useState(0)
-
-  const handleClicked = () => {
-    console.log('clicked');
-    setCount(count +1);
-  }
 
   return (
     <>
@@ -25,6 +20,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <div><h4><Clock/></h4></div>
+      
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -40,12 +38,6 @@ function App() {
         <h1>Bücherverwaltung</h1>
         <BooksList></BooksList>
       </div>
-      <div>
-        <button type="button" onClick={handleClicked}>Click</button>
-      </div>
-
-
-
     </>
   )
 }
