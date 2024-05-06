@@ -9,6 +9,11 @@ import BooksList from './BooksList';
 function App() {
   const [count, setCount] = useState(0)
 
+  const handleClicked = () => {
+    console.log('clicked');
+    setCount(count +1);
+  }
+
   return (
     <>
       <div>
@@ -35,7 +40,9 @@ function App() {
         <h1>Bücherverwaltung</h1>
         <BooksList></BooksList>
       </div>
-      <div><button></button></div>
+      <div>
+        <button type="button" onClick={handleClicked}>Click</button>
+      </div>
 
 
 
